@@ -1,6 +1,6 @@
 -- SISTEMA DE GESTION EMPRESARIAL -- (Cristobal)
 
-    
+    · Documentar Tarea de instalacion de ubuntu server
 
 -- PROGRAMACION DE SERVICIOS Y PROCESOS -- (José)
 
