@@ -4,19 +4,19 @@
 
 -- PROGRAMACION DE SERVICIOS Y PROCESOS -- (José)
 
-
+    · Ejercicios puesto en moodle
 
 -- DESARROLLO DE INTERFACES -- (Cristobal)
 
-
+    · Entregar Tarea Desahogapp
 
 -- HORAS DE LIBRE CONFIGURACION -- (Reyes)
 
-
+    · Relación de ejercicios C#
 
 -- ACCESO A DATOS -- (Juan)
 
-    · fdhgdfghdfghdfghdfghfmas
+    · 
 
 -- PROGRAMACION MULTIMEDIA -- (Reyes)
 
