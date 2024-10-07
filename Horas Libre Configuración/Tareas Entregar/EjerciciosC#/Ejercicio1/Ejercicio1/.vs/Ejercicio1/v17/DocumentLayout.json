@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuraci\u00F3n\\Tareas Entregar\\EjerciciosC#\\Ejercicio1\\Ejercicio1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43520038-1E50-439F-A6F4-AB1348828193}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\alumno\\desktop\\desarrollo aplicaciones multiplataforma\\horas libre configuraci\u00F3n\\tareas entregar\\ejerciciosc#\\ejercicio1\\ejercicio1\\ejercicio1\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43520038-1E50-439F-A6F4-AB1348828193}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{43520038-1E50-439F-A6F4-AB1348828193}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\alumno\\desktop\\desarrollo aplicaciones multiplataforma\\horas libre configuraci\u00F3n\\tareas entregar\\ejerciciosc#\\ejercicio1\\ejercicio1\\ejercicio1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43520038-1E50-439F-A6F4-AB1348828193}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43520038-1E50-439F-A6F4-AB1348828193}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\alumno\\desktop\\desarrollo aplicaciones multiplataforma\\horas libre configuraci\u00F3n\\tareas entregar\\ejerciciosc#\\ejercicio1\\ejercicio1\\ejercicio1\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43520038-1E50-439F-A6F4-AB1348828193}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Vehiculo.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuraci\u00F3n\\Tareas Entregar\\EjerciciosC#\\Ejercicio1\\Ejercicio1\\Ejercicio1\\Vehiculo.cs",
               "RelativeDocumentMoniker": "Ejercicio1\\Vehiculo.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuraci\u00F3n\\Tareas Entregar\\EjerciciosC#\\Ejercicio1\\Ejercicio1\\Ejercicio1\\Vehiculo.cs",
               "RelativeToolTip": "Ejercicio1\\Vehiculo.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwE4AAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAiwF0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T12:14:02.1Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuraci\u00F3n\\Tareas Entregar\\EjerciciosC#\\Ejercicio1\\Ejercicio1\\Ejercicio1\\Program.cs",
               "RelativeDocumentMoniker": "Ejercicio1\\Program.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuraci\u00F3n\\Tareas Entregar\\EjerciciosC#\\Ejercicio1\\Ejercicio1\\Ejercicio1\\Program.cs",
               "RelativeToolTip": "Ejercicio1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T12:13:25.386Z",
               "EditorCaption": ""
