@@ -104,7 +104,7 @@ namespace Ejercicio1
 
             if (techoSolar)
             {
-                precio = this.precioBase + (this.precioBase * 0.23);
+                precio = this.precioBase + (this.precioBase * 0.023);
             }
             
             return precio;
@@ -116,7 +116,7 @@ namespace Ejercicio1
 
             if (numPuerta == 3)
             {
-                precio = this.precioBase - (this.precioBase * 0.5);
+                precio = this.precioBase - (this.precioBase * 0.005);
             }
             return precio;
         }
@@ -148,18 +148,18 @@ namespace Ejercicio1
             double precio = 0;
             switch (numAirbags) 
             {
-                case 1: precio = this.precioBase + (this.precioBase * 0.15); 
+                case 1: precio = this.precioBase + (this.precioBase * 0.015); 
                     break;
-                case 2: precio = this.precioBase + (this.precioBase * 0.3);
+                case 2: precio = this.precioBase + (this.precioBase * 0.03);
                     break;
                 case 3:
-                    precio = this.precioBase + (this.precioBase * 0.45);
+                    precio = this.precioBase + (this.precioBase * 0.045);
                     break;
                 case 4:
-                    precio = this.precioBase + (this.precioBase * 0.6);
+                    precio = this.precioBase + (this.precioBase * 0.06);
                     break;
                 case 5:
-                    precio = this.precioBase + (this.precioBase * 0.75);
+                    precio = this.precioBase + (this.precioBase * 0.075);
                     break;
                 case 6:
                     precio = this.precioBase + (this.precioBase * 0.9);
@@ -172,7 +172,7 @@ namespace Ejercicio1
         {
             double precio = 0;
 
-            precio = this.precioBase + PrecioTecho(true) + PrecioPuerta(5) + PrecioMarca(marca.AUDI, tipo.DEPORTIVO) + PrecioLlantas(true) + PrecioAirbag(6);
+            precio = this.precioBase + PrecioTecho(true) - PrecioPuerta(5) + PrecioMarca(marca.AUDI, tipo.DEPORTIVO) + PrecioLlantas(true) + PrecioAirbag(6);
 
             return precio;
         }
