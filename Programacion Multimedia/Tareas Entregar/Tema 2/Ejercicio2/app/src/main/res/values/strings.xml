@@ -2,5 +2,9 @@
     <string name="app_name">Ejercicio2</string>
     <string name="tv_Titulo">Acceso</string>
     <string name="tv_Pistas">Pistas de Pádel</string>
+    <string name="txt_intentos">num Intentos: </string>
+    <string name="txt_intentosCorrectos">num Conexiones: </string>
+    <string name="btn_conectar">Conectar</string>
+
 
 </resources>
