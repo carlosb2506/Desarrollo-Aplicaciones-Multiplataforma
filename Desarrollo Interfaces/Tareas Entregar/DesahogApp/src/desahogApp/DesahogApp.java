@@ -79,7 +79,7 @@ public class DesahogApp {
 		btn_Info.setBorder(null);
 		btn_Info.setForeground(new Color(0, 0, 0));
 		btn_Info.setBackground(new Color(221, 160, 221));
-		btn_Info.setIcon(new ImageIcon("C:\\Users\\Alumno\\Downloads\\information.png"));
+		btn_Info.setIcon(new ImageIcon("C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo Interfaces\\Tareas Entregar\\DesahogApp\\information.png"));
 		btn_Info.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(frame, "Esta app fue diseñada por Carlos Barroso \n para ayudarte a solucionar tus problemas,\n en ella podras escribir tus malos pensamientos \n y eliminarlos de tu mente de manera muy intuitiva", "Información", JOptionPane.INFORMATION_MESSAGE);
