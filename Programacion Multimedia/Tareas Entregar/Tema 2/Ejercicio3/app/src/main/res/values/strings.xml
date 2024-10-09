@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Ejercicio3</string>
     <string name="tv_titulo">TABLAS DE MULTIPLICAR</string>
+    <string name="rbt_tabla1">TABLA DEL 1</string>
+    <string name="rbt_tabla2">TABLA DEL 2</string>
+    <string name="rbt_tabla3">TABLA DEL 3</string>
+    <string name="rbt_tabla4">TABLA DEL 4</string>
+    <string name="rbt_tabla5">TABLA DEL 5</string>
+    <string name="rbt_tabla6">TABLA DEL 6</string>
+    <string name="rbt_tabla7">TABLA DEL 7</string>
+    <string name="rbt_tabla8">TABLA DEL 8</string>
+    <string name="rbt_tabla9">TABLA DEL 9</string>
+    <string name="rbt_tabla10">TABLA DEL 10</string>
+    <string name="btn_mostrarResultado">MOSTRAR RESULTADOS</string>
 </resources>
