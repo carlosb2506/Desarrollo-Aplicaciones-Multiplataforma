@@ -51,8 +51,82 @@ public class MainActivity extends AppCompatActivity {
         {
             do{
                 num++;
+                int resul = 1 * num;
+                resultados.append("1 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        } else if (rbt_tabla2.isChecked())
+        {
+            do{
+                num++;
                 int resul = 2 * num;
                 resultados.append("2 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }
+        else if (rbt_tabla3.isChecked())
+        {
+            do{
+                num++;
+                int resul = 3 * num;
+                resultados.append("3 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }
+        else if (rbt_tabla4.isChecked())
+        {
+            do{
+                num++;
+                int resul = 4 * num;
+                resultados.append("4 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }else if (rbt_tabla5.isChecked())
+        {
+            do{
+                num++;
+                int resul = 5 * num;
+                resultados.append("5 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }else if (rbt_tabla6.isChecked())
+        {
+            do{
+                num++;
+                int resul = 6 * num;
+                resultados.append("6 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }else if (rbt_tabla7.isChecked())
+        {
+            do{
+                num++;
+                int resul = 7 * num;
+                resultados.append("7 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }else if (rbt_tabla8.isChecked())
+        {
+            do{
+                num++;
+                int resul = 8 * num;
+                resultados.append("8 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }else if (rbt_tabla9.isChecked())
+        {
+            do{
+                num++;
+                int resul = 9 * num;
+                resultados.append("9 x ").append(num).append(" = ").append(resul).append("\n");
+            } while (num < 10);
+
+        }else if (rbt_tabla10.isChecked())
+        {
+            do{
+                num++;
+                int resul = 10 * num;
+                resultados.append("10 x ").append(num).append(" = ").append(resul).append("\n");
             } while (num < 10);
 
         }

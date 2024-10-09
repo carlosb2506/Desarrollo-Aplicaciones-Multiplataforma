@@ -24,6 +24,7 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/abril_fatface"
+            android:foregroundTint="#2196F3"
             android:text="@string/tv_titulo"
             android:textSize="24sp" />
     </LinearLayout>
@@ -48,60 +49,70 @@
                 android:id="@+id/rbt_tabla1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla1" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla2" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla3" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla4" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla5" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla6" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla7" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla8" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla9" />
 
             <RadioButton
                 android:id="@+id/rbt_tabla10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="@string/rbt_tabla10" />
         </RadioGroup>
     </LinearLayout>
@@ -138,7 +149,12 @@
             android:id="@+id/btn_mostrarResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="#2196F3"
+            android:foregroundTint="#FF0303"
             android:onClick="mostrarResultado"
-            android:text="@string/btn_mostrarResultado" />
+            android:text="@string/btn_mostrarResultado"
+            android:textColor="#FFFDFD" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
