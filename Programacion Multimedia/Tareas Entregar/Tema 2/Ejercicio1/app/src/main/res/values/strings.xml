@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="clickAqui">HAZ CLICK AQUÍ</string>
+    <string name="tvPlano">Texto plano</string>
+    <string name="tvSerif">Fuente Serif</string>
+    <string name="tvNegrita">Negrita</string>
+    <string name="tvCursiva">Cursiva</string>
+    <string name="cbAndroid">Android</string>
+    <string name="cbIphone">Iphone</string>
+    <string name="rbtOpc1">Opción 1</string>
+    <string name="rbtOpc2">Opción 2</string>
+</resources>
