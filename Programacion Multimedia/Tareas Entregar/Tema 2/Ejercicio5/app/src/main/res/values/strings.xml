@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Ejercicio5</string>
-    <string name="tv_org">Escala Origen</string>
-    <string name="rbtOrgCentrigrados">Celsius</string>
-    <string name="rbtOrgKelvin">Kelvin</string>
-    <string name="rbtOrgFaren">Farenheit</string>
-    <string name="tv_dst">Escala Destino</string>
-    <string name="rbtDstCelsius">Celsius</string>
-    <string name="rbtDstKelvin">Kelvin</string>
-    <string name="rbtDstFaren">Farenheit</string>
-    <string name="btnMostrar">Mostrar Conversión</string>
-
+    <string name="app_name">ejercicio5</string>
+    <string name="tvOrigen">Escala Origen</string>
+    <string name="rbOrgCelsius">Celsius</string>
+    <string name="rbOrgKelvin">Kelvin</string>
+    <string name="rbOrgFaren">Fahrenheit</string>
+    <string name="tvDestino">Escala Destino</string>
+    <string name="rbDstCelsius">Celsius</string>
+    <string name="rbDstKelvin">Kelvin</string>
+    <string name="rbDstFaren">Fahrenheit</string>
+    <string name="salida"></string>
+    <string name="btnConfirmar">REALIZAR CONVERSIÓN</string>
 </resources>

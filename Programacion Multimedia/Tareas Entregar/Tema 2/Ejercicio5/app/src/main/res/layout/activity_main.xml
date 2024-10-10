@@ -2,109 +2,119 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/grados"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundTint="#2196F3"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="214dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="195dp"
-        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv_org"
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:text="@string/tv_org"
-            android:textAlignment="textStart"
-            android:textSize="20sp" />
+            android:id="@+id/tvOrigen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/agbalumo"
+            android:text="@string/tvOrigen"
+            android:textColor="#FF9800"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDestino"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/agbalumo"
+            android:text="@string/tvDestino"
+            android:textColor="#FF9800"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <RadioGroup
-            android:id="@+id/org"
+            android:id="@+id/rgOrg"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbOrgCelsius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbOrgCelsius"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbOrgKelvin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbOrgKelvin"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbOrgFaren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbOrgFaren"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgDst"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/rbtOrgCentigrados"
+                android:id="@+id/rbDstCelsius"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/rbtOrgCentrigrados" />
+                android:text="@string/rbDstCelsius"
+                android:textSize="16sp" />
 
             <RadioButton
-                android:id="@+id/rbtOrgKelvin"
+                android:id="@+id/rbDstKelvin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/rbtOrgKelvin" />
+                android:text="@string/rbDstKelvin"
+                android:textSize="16sp" />
 
             <RadioButton
-                android:id="@+id/rbtOrgFaren"
+                android:id="@+id/rbDstFaren"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/rbtOrgFaren" />
+                android:text="@string/rbDstFaren"
+                android:textSize="16sp" />
         </RadioGroup>
+
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="200dp"
-        android:layout_height="154dp"
+        android:layout_width="409dp"
+        android:layout_height="520dp"
         android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/tv_dst"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:text="@string/tv_dst"
-            android:textSize="20sp" />
-
-        <RadioGroup
-            android:id="@+id/dst"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RadioButton
-                android:id="@+id/rbtDstCelsius"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/rbtDstCelsius" />
-
-            <RadioButton
-                android:id="@+id/rbtDstKelvin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/rbtDstKelvin" />
-
-            <RadioButton
-                android:id="@+id/rbtDstFaren"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/rbtDstFaren" />
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="580dp"
-        android:layout_marginStart="2dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/entrada"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -112,19 +122,30 @@
                 android:id="@+id/entrada"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Escriba aqui los grados para la conversión" />
+                android:hint="Escriba aqui los grados a convertir"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColorHighlight="#FF5722"
+                android:textColorHint="#FF5722" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/salida"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/salida"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
         <Button
-            android:id="@+id/btnMostrar"
-            android:layout_width="246dp"
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#03A9F4"
-            android:fontFamily="@font/aldrich"
-            android:text="@string/btnMostrar"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="#2196F3"
+            android:foregroundTint="#FFFFFF"
+            android:onClick="mostrar"
+            android:text="@string/btnConfirmar"
+            android:textColor="#FBF9F9" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
