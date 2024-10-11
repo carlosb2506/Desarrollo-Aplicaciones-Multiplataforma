@@ -106,6 +106,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout2"
         android:layout_width="412dp"
         android:layout_height="288dp"
         android:layout_marginTop="34dp"
@@ -115,6 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
         <LinearLayout
+            android:id="@+id/btnConfirmar"
             android:layout_width="410dp"
             android:layout_height="318dp"
             android:orientation="horizontal">
@@ -137,6 +139,7 @@
                     android:text="@string/cbIphone" />
 
                 <RadioGroup
+                    android:id="@+id/rgOpc"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -154,12 +157,27 @@
                 </RadioGroup>
             </LinearLayout>
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button" />
+            <LinearLayout
+                android:layout_width="211dp"
+                android:layout_height="286dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="mostrar"
+                    android:text="@string/btnConfirmar" />
+
+                <TextView
+                    android:id="@+id/tvSalida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvSalida" />
+            </LinearLayout>
+
         </LinearLayout>
+
     </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

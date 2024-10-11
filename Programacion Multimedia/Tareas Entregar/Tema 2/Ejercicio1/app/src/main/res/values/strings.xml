@@ -9,4 +9,6 @@
     <string name="cbIphone">Iphone</string>
     <string name="rbtOpc1">Opción 1</string>
     <string name="rbtOpc2">Opción 2</string>
+    <string name="btnConfirmar">Confirmar Selección</string>
+    <string name="tvSalida"></string>
 </resources>
