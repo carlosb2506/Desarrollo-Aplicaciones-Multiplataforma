@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejercicio6</string>
+    <string name="tvTitulo">Bienvenido al juego adivina el número secreto</string>
+    <string name="tpNumMax">Escribe el número máximo</string>
+    <string name="tpNumMin">Escribe el número mínimo</string>
+    <string name="tpNumAdv">¿Cual piensas que es el numero para abrir el tesoro?</string>
+    <string name="btnConfirmar">PROBAR SUERTE</string>
+</resources>
