@@ -17,6 +17,8 @@ import java.awt.Insets;
 import java.awt.Component;
 import java.awt.Color;
 import java.awt.event.ActionListener;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
@@ -75,6 +77,19 @@ public class Practica1_4 {
 				 
 				 String desc = JOptionPane.showInputDialog(frame,"DAME UNA BREVE DESCRIPCIÓN SOBRE DICHA ACTIVIDAD");
 				 
+					try(FileWriter fw = new FileWriter("C:\\Practica1.4\\Prueba.txt", true)){
+						PrintWriter pw = new PrintWriter(fw);
+						
+						pw.write(titulo);
+						pw.write("\n");
+						
+						pw.close();
+						fw.close();
+						
+					} catch(Exception ex) {
+						
+					}
+				 
 			}
 		});
 		
@@ -109,6 +124,20 @@ public class Practica1_4 {
 					{
 						bandera = true;
 						tareasAniadir.remove(i);
+						try(FileWriter fw = new FileWriter("C:\\Practica1.4\\Prueba.txt")){
+							PrintWriter pw = new PrintWriter(fw);
+							
+							for (int a = 0; a < tareasAniadir.getSize(); a++) {
+				                String tarea = tareasAniadir.getElementAt(a);
+				                pw.write(tarea);
+				                pw.write("\n");
+				            }
+							pw.close();
+							fw.close();
+							
+						} catch(Exception ex) {
+							
+						}
 					}
 						
 				}
@@ -136,6 +165,21 @@ public class Practica1_4 {
 						if(resp.equals("si")|| resp.equals("Si")|| resp.equals("SI")) {
 							String titNuevo = JOptionPane.showInputDialog(frame,"DIME EL NUEVO TITULO QUE DESEAS");
 							tareasAniadir.set(i, titNuevo);
+							
+							try(FileWriter fw = new FileWriter("C:\\Practica1.4\\Prueba.txt")){
+								PrintWriter pw = new PrintWriter(fw);
+								
+								for (int a = 0; a < tareasAniadir.getSize(); a++) {
+					                String tarea = tareasAniadir.getElementAt(a);
+					                pw.write(tarea);
+					                pw.write("\n");
+					            }
+								pw.close();
+								fw.close();
+								
+							} catch(Exception ex) {
+								
+							}
 						} else 
 							JOptionPane.showMessageDialog(frame, "OPERACIÓN CANCELADA");
 					}
@@ -152,8 +196,6 @@ public class Practica1_4 {
 		JList list = new JList(tareasAniadir);
 		list.setBackground(new Color(255, 255, 255));
 		list.setBounds(10, 49, 414, 167);
-		frame.getContentPane().add(list);
-		
-		
+		frame.getContentPane().add(list);		
 	}
 }
