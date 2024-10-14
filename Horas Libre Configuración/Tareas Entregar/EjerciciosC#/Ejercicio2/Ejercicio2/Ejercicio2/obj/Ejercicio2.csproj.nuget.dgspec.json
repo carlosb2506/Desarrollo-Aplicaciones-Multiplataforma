@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {}
+    "C:\\Users\\Alumno\\Desktop\\DAM\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {
+    "C:\\Users\\Alumno\\Desktop\\DAM\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\DAM\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
         "projectName": "Ejercicio2",
-        "projectPath": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
+        "projectPath": "C:\\Users\\Alumno\\Desktop\\DAM\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Desktop\\Desarrollo Aplicaciones Multiplataforma\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\Desktop\\DAM\\Horas Libre Configuración\\Tareas Entregar\\EjerciciosC#\\Ejercicio2\\Ejercicio2\\Ejercicio2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
