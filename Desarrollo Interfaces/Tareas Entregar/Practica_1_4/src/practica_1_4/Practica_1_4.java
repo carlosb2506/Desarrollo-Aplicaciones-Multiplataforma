@@ -1,4 +1,4 @@
-package practica1_4;
+package practica_1_4;
 
 import java.awt.EventQueue;
 
@@ -24,7 +24,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JTextField;
 
-public class Practica1_4 {
+public class Practica_1_4 {
 
 	private JFrame frame;
 	private JTextField txtTareas;
@@ -36,7 +36,7 @@ public class Practica1_4 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Practica1_4 window = new Practica1_4();
+					Practica_1_4 window = new Practica_1_4();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -48,7 +48,7 @@ public class Practica1_4 {
 	/**
 	 * Create the application.
 	 */
-	public Practica1_4() {
+	public Practica_1_4() {
 		initialize();
 	}
 
@@ -199,3 +199,4 @@ public class Practica1_4 {
 		frame.getContentPane().add(list);		
 	}
 }
+
