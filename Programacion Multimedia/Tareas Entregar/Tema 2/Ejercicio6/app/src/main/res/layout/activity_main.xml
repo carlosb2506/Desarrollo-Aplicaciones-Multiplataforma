@@ -50,8 +50,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:ems="10"
+                android:hint="Escribe el número máximo"
                 android:inputType="text"
                 android:text="@string/tpNumMax"
+                android:textColorHint="#000000"
                 android:textSize="14sp" />
 
             <EditText
@@ -60,8 +62,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:ems="10"
+                android:hint="Escribe el número mínimo"
                 android:inputType="text"
                 android:text="@string/tpNumMin"
+                android:textColorHint="#000000"
                 android:textSize="14sp" />
         </LinearLayout>
     </FrameLayout>
@@ -82,8 +86,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:ems="10"
+            android:hint="¿Cual piensas que es el numero para abrir el tesoro?"
             android:inputType="text"
             android:text="@string/tpNumAdv"
+            android:textColorHint="#000000"
             android:textSize="14sp" />
 
         <Button
@@ -98,6 +104,30 @@
             android:text="@string/btnConfirmar"
             android:textColor="#FFFFFF"
             android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvIntentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:text="@string/tvIntentos" />
+
+        <TextView
+            android:id="@+id/tvRestantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="200dp"
+            android:text="@string/tvRestantes" />
+
+        <TextView
+            android:id="@+id/tvPista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="240dp"
+            android:text="@string/tvPista" />
     </FrameLayout>
 
     <ImageView
