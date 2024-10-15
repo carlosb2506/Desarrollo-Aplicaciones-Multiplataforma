@@ -94,14 +94,28 @@
 
         <Button
             android:id="@+id/btnConfirmar"
-            android:layout_width="185dp"
+            android:layout_width="164dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="70dp"
             android:backgroundTint="#FF5722"
             android:fontFamily="@font/aldrich"
             android:onClick="comprobar"
             android:text="@string/btnConfirmar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnVolverJuego"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="#FF5722"
+            android:enabled="false"
+            android:fontFamily="@font/aldrich"
+            android:onClick="volverJuego"
+            android:text="@string/btnVolverJuego"
             android:textColor="#FFFFFF"
             android:textStyle="bold|italic" />
 
@@ -111,7 +125,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="200dp"
-            android:text="@string/tvIntentos" />
+            android:text="@string/tvIntentos"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tvRestantes"
@@ -119,7 +134,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="250dp"
             android:layout_marginTop="200dp"
-            android:text="@string/tvRestantes" />
+            android:text="@string/tvRestantes"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tvPista"
@@ -127,7 +143,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="240dp"
-            android:text="@string/tvPista" />
+            android:text="@string/tvPista"
+            android:textColor="#000000" />
     </FrameLayout>
 
     <ImageView

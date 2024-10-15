@@ -5,6 +5,7 @@
     <string name="tpNumMin"></string>
     <string name="tpNumAdv"></string>
     <string name="btnConfirmar">PROBAR SUERTE</string>
+    <string name="btnVolverJuego">VOLVER A JUGAR</string>
     <string name="tvIntentos">Intentos Disponibles: 10</string>
     <string name="tvRestantes">Intentos Restantes: </string>
     <string name="tvPista">Pista:</string>
