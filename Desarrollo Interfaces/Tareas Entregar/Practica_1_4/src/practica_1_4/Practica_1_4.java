@@ -10,11 +10,16 @@ import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.event.ActionListener;
+import java.beans.XMLEncoder;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JTextField;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Practica_1_4 {
 
@@ -50,6 +55,8 @@ public class Practica_1_4 {
 	private void initialize() {
 		//ArrayList<String> tareasAniadir = new ArrayList<>();
 		DefaultListModel<String> tareasAniadir = new DefaultListModel<>();
+		File fichero = new File("Tareas.txt");
+		//String desc = "";
 		
 		frame = new JFrame();
 		frame.getContentPane().setBackground(new Color(192, 192, 192));
@@ -66,20 +73,20 @@ public class Practica_1_4 {
 				
 				 String titulo = JOptionPane.showInputDialog(frame,"TITULO DE LA ACTIVIDAD QUE DESEA AÑADIR");	
 				 tareasAniadir.addElement(titulo);
+				 String descripcion = JOptionPane.showInputDialog(frame,"AÑADE UNA BREVE DESCRIPCIÓN SOBRE LA TAREA");
 				 
-				 //String desc = JOptionPane.showInputDialog(frame,"DAME UNA BREVE DESCRIPCIÓN SOBRE DICHA ACTIVIDAD");
 				 
-					try(FileWriter fw = new FileWriter("C:\\Practica1.4\\Prueba.txt", true)){
+					try(FileWriter fw = new FileWriter(fichero, true)){
 						PrintWriter pw = new PrintWriter(fw);
 						
-						pw.write(titulo);
-						pw.write("\n");
+							pw.write(titulo);						
+							pw.write("\n");
 						
-						pw.close();
-						fw.close();
+							pw.close();
+							fw.close();
 						
 					} catch(Exception ex) {
-						
+						JOptionPane.showInputDialog(frame,"HA OCURRIDO UN ERROR EN LA INSERCCIÓN DE LAS TAREAS EN EL FICHERO");
 					}
 				 
 			}
@@ -116,7 +123,7 @@ public class Practica_1_4 {
 					{
 						bandera = true;
 						tareasAniadir.remove(i);
-						try(FileWriter fw = new FileWriter("C:\\Practica1.4\\Prueba.txt")){
+						try(FileWriter fw = new FileWriter(fichero)){
 							PrintWriter pw = new PrintWriter(fw);
 							
 							for (int a = 0; a < tareasAniadir.getSize(); a++) {
@@ -128,7 +135,7 @@ public class Practica_1_4 {
 							fw.close();
 							
 						} catch(Exception ex) {
-							
+							JOptionPane.showInputDialog(frame,"HA OCURRIDO UN ERROR EN LA ACTUALIZACIÓN DE LAS TAREAS EN EL FICHERO");
 						}
 					}
 						
@@ -158,7 +165,7 @@ public class Practica_1_4 {
 							String titNuevo = JOptionPane.showInputDialog(frame,"DIME EL NUEVO TITULO QUE DESEAS");
 							tareasAniadir.set(i, titNuevo);
 							
-							try(FileWriter fw = new FileWriter("C:\\Practica1.4\\Prueba.txt")){
+							try(FileWriter fw = new FileWriter(fichero)){
 								PrintWriter pw = new PrintWriter(fw);
 								
 								for (int a = 0; a < tareasAniadir.getSize(); a++) {
@@ -170,7 +177,7 @@ public class Practica_1_4 {
 								fw.close();
 								
 							} catch(Exception ex) {
-								
+								JOptionPane.showInputDialog(frame,"HA OCURRIDO UN ERROR EN LA ELIMINACIÓN DE LAS TAREAS EN EL FICHERO");
 							}
 						} else 
 							JOptionPane.showMessageDialog(frame, "OPERACIÓN CANCELADA");
