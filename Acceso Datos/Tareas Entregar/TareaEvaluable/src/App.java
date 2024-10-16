@@ -23,7 +23,6 @@ public class App {
 
                 opc = Integer.parseInt(System.console().readLine());
 
-
                 switch (opc) {
                     case 1:
                         Burro burrete = new Burro();
