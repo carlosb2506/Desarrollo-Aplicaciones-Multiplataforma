@@ -5,21 +5,13 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.ListSelectionModel;
-
-import java.awt.BorderLayout;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
-import java.awt.Dimension;
-import java.awt.Insets;
-import java.awt.Component;
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JTextField;
@@ -75,7 +67,7 @@ public class Practica_1_4 {
 				 String titulo = JOptionPane.showInputDialog(frame,"TITULO DE LA ACTIVIDAD QUE DESEA AÑADIR");	
 				 tareasAniadir.addElement(titulo);
 				 
-				 String desc = JOptionPane.showInputDialog(frame,"DAME UNA BREVE DESCRIPCIÓN SOBRE DICHA ACTIVIDAD");
+				 //String desc = JOptionPane.showInputDialog(frame,"DAME UNA BREVE DESCRIPCIÓN SOBRE DICHA ACTIVIDAD");
 				 
 					try(FileWriter fw = new FileWriter("C:\\Practica1.4\\Prueba.txt", true)){
 						PrintWriter pw = new PrintWriter(fw);
