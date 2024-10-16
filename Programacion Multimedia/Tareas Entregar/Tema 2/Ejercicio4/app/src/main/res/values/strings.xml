@@ -11,5 +11,10 @@
     <string name="btn8">8</string>
     <string name="btn9">9</string>
     <string name="btn0">0</string>
-    <string name="btnResult">Mostrar Resultados</string>
+    <string name="btnIgual">=</string>
+    <string name="tvResultados"></string>
+    <string name="btnSumar">+</string>
+    <string name="btnRestar">-</string>
+    <string name="btnMultiplicar">x</string>
+    <string name="btnDividir">/</string>
 </resources>

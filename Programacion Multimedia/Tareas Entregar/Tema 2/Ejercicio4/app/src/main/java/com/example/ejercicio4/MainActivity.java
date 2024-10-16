@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tv_pantalla;
+    private TextView tvResultado;
     private Button btn0, btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
 
     @Override
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        tv_pantalla = findViewById(R.id.tv_pantalla);
+        tvResultado = findViewById(R.id.tvResultados);
 
         btn0 = findViewById(R.id.btn0);
         btn1 = findViewById(R.id.btn1);
@@ -44,38 +44,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void boton1(View view){
-        tv_pantalla.setText(btn1.getText().toString());
-    }
-    public void boton2(View view){
-        tv_pantalla.setText(btn2.getText().toString());
-    }
-    public void boton3(View view){
-        tv_pantalla.setText(btn3.getText().toString());
-    }
-    public void boton4(View view){
-        tv_pantalla.setText(btn4.getText().toString());
-    }
-    public void boton5(View view){
-        tv_pantalla.setText(btn5.getText().toString());
-    }
-    public void boton6(View view){
-        tv_pantalla.setText(btn6.getText().toString());
-    }
-    public void boton7(View view){
-        tv_pantalla.setText(btn7.getText().toString());
-    }
-    public void boton8(View view){
-        tv_pantalla.setText(btn8.getText().toString());
-    }
-    public void boton9(View view){
-        tv_pantalla.setText(btn9.getText().toString());
-    }
-    public void boton0(View view){
-        tv_pantalla.setText(btn0.getText().toString());
-    }
-
-    public void opereciones(){
+    public void botonPulsado(View view){
+        String cadena = "";
+        if (view == btn0) {
+            cadena = tvResultado.getText().toString() + btn0.getText().toString();
+        } else if (view == btn1) {
+            cadena = tvResultado.getText().toString() + btn1.getText().toString();
+        } else if (view == btn2) {
+            cadena = tvResultado.getText().toString() + btn2.getText().toString();
+        } else if (view == btn3) {
+            cadena = tvResultado.getText().toString() + btn3.getText().toString();
+        } else if (view == btn4) {
+            cadena = tvResultado.getText().toString() + btn4.getText().toString();
+        } else if (view == btn5) {
+            cadena = tvResultado.getText().toString() + btn5.getText().toString();
+        } else if (view == btn6) {
+            cadena = tvResultado.getText().toString() + btn6.getText().toString();
+        } else if (view == btn7) {
+            cadena = tvResultado.getText().toString() + btn7.getText().toString();
+        } else if (view == btn8) {
+            cadena = tvResultado.getText().toString() + btn8.getText().toString();
+        } else if (view == btn9) {
+            cadena = tvResultado.getText().toString() + btn9.getText().toString();
+        }
+        tvResultado.setText(cadena);
     }
 
 }
