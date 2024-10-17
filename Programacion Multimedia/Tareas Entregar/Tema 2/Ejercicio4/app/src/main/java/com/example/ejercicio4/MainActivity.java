@@ -1,6 +1,7 @@
 package com.example.ejercicio4;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,8 +15,10 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvResultado;
-    private Button btn0, btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
-
+    private Button btn0, btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9, btnSumar, btnRestar, btnMultiplicar, btnDividir, btnIgual;
+    private  int visor,resultado;
+    private  String opAnterior;
+    String cadena ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,35 +42,79 @@ public class MainActivity extends AppCompatActivity {
         btn7 = findViewById(R.id.btn7);
         btn8 = findViewById(R.id.btn8);
         btn9 = findViewById(R.id.btn9);
-
-
+        btnSumar = findViewById(R.id.btnSumar);
+        btnDividir = findViewById(R.id.btnDividir);
+        btnRestar = findViewById(R.id.btnRestar);
+        btnMultiplicar = findViewById(R.id.btnMultiplicar);
+        btnIgual = findViewById(R.id.btnIgual);
+        resultado = 0;
+        visor = 0;
+        cadena="";
+        opAnterior = null;
 
     }
 
     public void botonPulsado(View view){
-        String cadena = "";
+        Log.d("TAG", "debug: por aqui pasa " + cadena);
         if (view == btn0) {
-            cadena = tvResultado.getText().toString() + btn0.getText().toString();
+            cadena = cadena + btn0.getText().toString();
         } else if (view == btn1) {
-            cadena = tvResultado.getText().toString() + btn1.getText().toString();
+            cadena = cadena + btn1.getText().toString();
         } else if (view == btn2) {
-            cadena = tvResultado.getText().toString() + btn2.getText().toString();
+            cadena = cadena + btn2.getText().toString();
         } else if (view == btn3) {
-            cadena = tvResultado.getText().toString() + btn3.getText().toString();
+            cadena = cadena + btn3.getText().toString();
         } else if (view == btn4) {
-            cadena = tvResultado.getText().toString() + btn4.getText().toString();
+            cadena = cadena + btn4.getText().toString();
         } else if (view == btn5) {
-            cadena = tvResultado.getText().toString() + btn5.getText().toString();
+            cadena = cadena + btn5.getText().toString();
         } else if (view == btn6) {
-            cadena = tvResultado.getText().toString() + btn6.getText().toString();
+            cadena = cadena + btn6.getText().toString();
         } else if (view == btn7) {
-            cadena = tvResultado.getText().toString() + btn7.getText().toString();
+            cadena = cadena + btn7.getText().toString();
         } else if (view == btn8) {
-            cadena = tvResultado.getText().toString() + btn8.getText().toString();
+            cadena = cadena + btn8.getText().toString();
         } else if (view == btn9) {
-            cadena = tvResultado.getText().toString() + btn9.getText().toString();
+            cadena = cadena + btn9.getText().toString();
         }
         tvResultado.setText(cadena);
+    }
+
+    public void operaciones(View view){
+        visor = Integer.parseInt(tvResultado.getText().toString());
+
+        if (opAnterior == null){
+            resultado = visor;
+        }
+        else if (opAnterior.equals(btnSumar.getText().toString())){
+            resultado = visor + resultado;
+        } else if (opAnterior.equals(btnRestar.getText().toString())){
+            resultado = resultado - visor;
+        } else if (opAnterior.equals(btnMultiplicar.getText().toString())){
+            resultado = resultado * visor;
+        }
+        else if (opAnterior.equals(btnDividir.getText().toString())){
+            resultado = resultado / visor;
+        }
+
+
+
+        if (view == btnSumar) {
+            opAnterior = btnSumar.getText().toString();
+        } else if (view == btnRestar) {
+            opAnterior = btnRestar.getText().toString();
+        }
+        else  if (view == btnMultiplicar) {
+            opAnterior = btnMultiplicar.getText().toString();
+        }
+        else if (view == btnDividir) {
+            opAnterior = btnDividir.getText().toString();
+        }
+        else if (view == btnIgual){
+            opAnterior = null;
+        }
+        cadena = "";
+        tvResultado.setText(Integer.toString(resultado));
     }
 
 }

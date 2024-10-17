@@ -75,6 +75,7 @@
                 android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/btnsignos"
+                android:onClick="operaciones"
                 android:text="@string/btnSumar" />
         </TableRow>
 
@@ -119,6 +120,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/btnsignos"
+                android:onClick="operaciones"
                 android:text="@string/btnRestar" />
         </TableRow>
 
@@ -162,12 +164,13 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/btnsignos"
+                android:onClick="operaciones"
                 android:text="@string/btnMultiplicar" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="80dp">
 
             <Button
                 android:id="@+id/btn0"
@@ -179,6 +182,11 @@
                 android:onClick="botonPulsado"
                 android:text="@string/btn0" />
 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content" />
+
             <Button
                 android:id="@+id/btnIgual"
                 android:layout_width="wrap_content"
@@ -188,11 +196,6 @@
                 android:background="@drawable/btnsignos"
                 android:text="@string/btnIgual" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
             <Button
                 android:id="@+id/btnDividir"
                 android:layout_width="wrap_content"
@@ -200,6 +203,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/btnsignos"
+                android:onClick="operaciones"
                 android:text="@string/btnDividir" />
 
         </TableRow>
