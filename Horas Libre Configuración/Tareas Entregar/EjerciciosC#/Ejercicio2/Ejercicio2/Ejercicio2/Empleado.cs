@@ -54,9 +54,9 @@ namespace Ejercicio2
 
         //MÉTODOS
 
-        public int SalarioBase(int numHorasTrabajadas)
+        public double SalarioBase(int numHorasTrabajadas)
         {
-            int v;
+            double v;
 
             if (numHorasTrabajadas <= 40)
             {
@@ -69,6 +69,63 @@ namespace Ejercicio2
             return v;
         }
 
+        public double Extras(int horasExtras)
+        {
+            double salarioExtra = horasExtras * (27 + (27 * 0.3));
 
+            return salarioExtra;
+        }
+
+        public double Extranjero(bool extranjero)
+        {
+            double extraExtranjero;
+            if (extranjero)
+            {
+                extraExtranjero = SalarioBase(numHorasTrabajadas) * 0.12;
+            }
+            else
+            {
+                extraExtranjero = 0;
+            }
+            return extraExtranjero;
+        } 
+
+        public double Nivel(niveles nivel)
+        {
+            double extraNivel;
+            switch (niveles)
+            {
+                case niveles.JUNIOR:
+                    extraNivel = 0;
+                    break;
+                case niveles.SENIOR:
+                    extraNivel = SalarioBase(numHorasTrabajadas) * 0.25;
+                    break;
+                case niveles.ANALISTA:
+                    extraNiveles = SalarioBase(numHorasTrabajadas) * 0.50;
+                    break;
+            }
+            return extraNivel;
+        }
+        public double ImporteBruto()
+        {
+            return SalarioBase(numHorasTrabajadas) + Extras(horasExtras) + Extranjero(extranjero) + Nivel(nivel);
+        }
+
+        public double ImporteNeto()
+        {
+            double importeNeto;
+            if (SalarioBase(numHorasTrabajadas) < 1400)
+            {
+                importeNeto = SalarioBase(numHorasTrabajadas) / 0.15;
+            } else if (SalarioBase(numHorasTrabajadas) > 1401 || SalarioBase(numHorasTrabajadas) < 1700)
+            {
+                importeNeto = SalarioBase(numHorasTrabajadas) / 0.22;
+            }
+            else if (SalarioBase() > 1700)
+            {
+                importeNeto = SalarioBase(numHorasTrabajadas) / 0.27;
+            }
+        }
     }
 }
