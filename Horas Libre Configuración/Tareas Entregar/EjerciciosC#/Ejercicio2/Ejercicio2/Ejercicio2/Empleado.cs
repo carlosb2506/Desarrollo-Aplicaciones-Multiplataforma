@@ -54,6 +54,11 @@ namespace Ejercicio2
 
         //MÉTODOS
 
+        public Empleado(string nombre, int antiguedad, bool extranjero, int numHorasTrabajadas, niveles nivel)
+        {
+
+        }
+
         public double SalarioBase(int numHorasTrabajadas)
         {
             double v;
@@ -92,16 +97,13 @@ namespace Ejercicio2
 
         public double Nivel(niveles nivel)
         {
-            double extraNivel;
-            switch (niveles)
+            double extraNivel =  0;
+            switch (nivel)
             {
-                case niveles.JUNIOR:
-                    extraNivel = 0;
-                    break;
-                case niveles.SENIOR:
+                case nivel.SENIOR:
                     extraNivel = SalarioBase(numHorasTrabajadas) * 0.25;
                     break;
-                case niveles.ANALISTA:
+                case nivel.ANALISTA:
                     extraNiveles = SalarioBase(numHorasTrabajadas) * 0.50;
                     break;
             }

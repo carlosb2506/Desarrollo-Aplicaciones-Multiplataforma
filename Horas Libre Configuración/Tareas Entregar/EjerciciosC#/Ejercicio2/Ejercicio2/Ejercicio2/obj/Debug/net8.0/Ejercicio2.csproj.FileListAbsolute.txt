@@ -1,0 +1,5 @@
+C:\Users\cbarl\OneDrive\Escritorio\DAM\Horas Libre Configuración\Tareas Entregar\EjerciciosC#\Ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cbarl\OneDrive\Escritorio\DAM\Horas Libre Configuración\Tareas Entregar\EjerciciosC#\Ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.AssemblyInfoInputs.cache
+C:\Users\cbarl\OneDrive\Escritorio\DAM\Horas Libre Configuración\Tareas Entregar\EjerciciosC#\Ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.AssemblyInfo.cs
+C:\Users\cbarl\OneDrive\Escritorio\DAM\Horas Libre Configuración\Tareas Entregar\EjerciciosC#\Ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.csproj.CoreCompileInputs.cache
+C:\Users\cbarl\OneDrive\Escritorio\DAM\Horas Libre Configuración\Tareas Entregar\EjerciciosC#\Ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.sourcelink.json
