@@ -1,0 +1,80 @@
+import java.util.Random;
+
+// Clase que representa a un cliente
+class Cliente {
+    private int id; // Identificador del cliente
+
+    // Constructor del cliente que recibe un ID
+    public Cliente(int id) {
+        this.id = id;
+    }
+
+    // Método para obtener el ID del cliente
+    public int getId() {
+        return id;
+    }
+
+    // Método que simula los intentos de entrada del cliente
+    public boolean intentaEntrar(int intentosMaximos) {
+        Random random = new Random(); // Generador de números aleatorios
+        for (int i = 0; i < intentosMaximos; i++) {
+            // Simulamos la posibilidad de que la puerta esté libre
+            if (random.nextBoolean()) { // 50% de probabilidad de que la puerta esté libre
+                return true; // El cliente logra entrar
+            }
+        }
+        return false; // El cliente se marcha sin entrar después de 10 intentos
+    }
+}
+
+// Clase que representa el almacén
+class Almacen {
+    private int productosDisponibles; // Cantidad de productos disponibles en el almacén
+
+    // Constructor del almacén que recibe el número inicial de productos
+    public Almacen(int productos) {
+        this.productosDisponibles = productos;
+    }
+
+    // Método que maneja la entrada de un cliente al almacén
+    public synchronized boolean clienteEntra(Cliente cliente) {
+        // Verificamos si quedan productos disponibles
+        if (productosDisponibles > 0) {
+            productosDisponibles--; // Se reduce el número de productos
+            System.out.println("Cliente " + cliente.getId() + " ha entrado y tomó un producto. Productos restantes: " + productosDisponibles);
+            return true; // Cliente entró y tomó un producto
+        } else {
+            // Si no hay productos, el cliente se marcha
+            System.out.println("Cliente " + cliente.getId() + " ha entrado pero no quedan productos.");
+            return false; // Cliente entró pero no pudo tomar un producto
+        }
+    }
+}
+
+// Clase principal que ejecuta la simulación
+public class Simulacion {
+    public static void main(String[] args) {
+        final int TOTAL_CLIENTES = 300; // Total de clientes
+        final int PRODUCTOS = 100; // Total de productos disponibles
+        final int MAX_INTENTOS = 10; // Número máximo de intentos de entrada por cliente
+
+        Almacen almacen = new Almacen(PRODUCTOS); // Inicializa el almacén con productos disponibles
+        Cliente[] clientes = new Cliente[TOTAL_CLIENTES]; // Array para almacenar clientes
+
+        // Crear clientes
+        for (int i = 0; i < TOTAL_CLIENTES; i++) {
+            clientes[i] = new Cliente(i + 1); // Cada cliente recibe un ID único
+        }
+
+        // Simular los intentos de cada cliente
+        for (Cliente cliente : clientes) {
+            // Si el cliente logra entrar, se intenta acceder al almacén
+            if (cliente.intentaEntrar(MAX_INTENTOS)) {
+                almacen.clienteEntra(cliente); // El cliente entra al almacén
+            } else {
+                // Si no logra entrar después de 10 intentos, se marcha
+                System.out.println("Cliente " + cliente.getId() + " se marcha después de 10 intentos.");
+            }
+        }
+    }
+}
