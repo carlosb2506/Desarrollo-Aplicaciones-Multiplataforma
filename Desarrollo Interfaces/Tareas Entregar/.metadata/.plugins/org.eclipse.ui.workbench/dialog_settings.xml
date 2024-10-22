@@ -1,48 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="651"/>
-		<item key="DIALOG_Y_ORIGIN" value="158"/>
-		<item key="DIALOG_WIDTH" value="756"/>
-		<item key="DIALOG_HEIGHT" value="803"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-	</section>
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.fx.ide.jdt.ui.javafx"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.fx.ide"/>
-			<item value="org.eclipse.wb"/>
-			<item value="org.eclipse.wb/org.eclipse.wb.swing"/>
 		</list>
 		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="859"/>
+			<item key="DIALOG_Y_ORIGIN" value="359"/>
+			<item key="DIALOG_WIDTH" value="700"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
-	<section name="ImportExportAction">
-		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
-		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
-			<item value="org.eclipse.ui.Basic"/>
-		</list>
-		<section name="ImportExportWizard.dialogBounds">
-		</section>
-	</section>
-	<section name="ZipFileExportWizard">
-		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
-		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
-		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
-			<item value="C:\Users\Alumno\Desktop\DAM\Desarrollo Interfaces\Tareas Entregar\Barroso_Carlos_Practica1.3.zip"/>
-			<item value="C:\Users\Alumno\Desktop\DAM\Desarrollo Interfaces\Tareas Entregar\Barroso_Carlos.zip"/>
-			<item value="C:\Users\Alumno\Desktop\DAM\Desarrollo Interfaces\Tareas Entregar\Practica1.3.zip"/>
-		</list>
-		<section name="ZipFileExportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="706"/>
-			<item key="DIALOG_Y_ORIGIN" value="191"/>
-			<item key="DIALOG_WIDTH" value="623"/>
-			<item key="DIALOG_HEIGHT" value="622"/>
-			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-		</section>
+	<section name="WorkbenchPreferenceDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="818"/>
+		<item key="DIALOG_Y_ORIGIN" value="192"/>
+		<item key="DIALOG_WIDTH" value="840"/>
+		<item key="DIALOG_HEIGHT" value="987"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="EditorSelectionDialog">
 		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="true"/>
-		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="C:\Users\Alumno\AppData\Local\SceneBuilder\SceneBuilder.exe"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="C:\Users\cbarl\AppData\Local\SceneBuilder\SceneBuilder.exe"/>
 	</section>
 </section>
