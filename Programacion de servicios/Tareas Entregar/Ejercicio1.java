@@ -1,58 +1,56 @@
 import java.util.Random;
 
-// Clase que representa a un cliente
-class Cliente {
-    private int id; // Identificador del cliente
 
-    // Constructor del cliente que recibe un ID
+class Cliente {
+    private int id; // Atributo identificador del cliente
+
+    // Aquí declaramos el constructor del cliente
     public Cliente(int id) {
         this.id = id;
     }
 
-    // Método para obtener el ID del cliente
     public int getId() {
         return id;
     }
 
-    // Método que simula los intentos de entrada del cliente
+    // simulamos los intentos de entrada del cliente
     public boolean intentaEntrar(int intentosMaximos) {
-        Random random = new Random(); // Generador de números aleatorios
+        Random random = new Random();// números aleatorios
+        
         for (int i = 0; i < intentosMaximos; i++) {
-            // Simulamos la posibilidad de que la puerta esté libre
-            if (random.nextBoolean()) { // 50% de probabilidad de que la puerta esté libre
+            if (random.nextBoolean()) {
                 return true; // El cliente logra entrar
             }
         }
-        return false; // El cliente se marcha sin entrar después de 10 intentos
+        return false; // El cliente se marchara si después de 10 intentos no logra entrar
     }
 }
 
-// Clase que representa el almacén
 class Almacen {
-    private int productosDisponibles; // Cantidad de productos disponibles en el almacén
+    private int productosDisponibles; // Cantidad de productos disponibles
 
-    // Constructor del almacén que recibe el número inicial de productos
+    // Constructor del almacén
     public Almacen(int productos) {
         this.productosDisponibles = productos;
     }
 
-    // Método que maneja la entrada de un cliente al almacén
+    // Método que maneja la entrada de un cliente
     public synchronized boolean clienteEntra(Cliente cliente) {
-        // Verificamos si quedan productos disponibles
+        // Vemos si quedan productos disponibles
         if (productosDisponibles > 0) {
-            productosDisponibles--; // Se reduce el número de productos
+            productosDisponibles--; // Se decrementa el número de productos
             System.out.println("Cliente " + cliente.getId() + " ha entrado y tomó un producto. Productos restantes: " + productosDisponibles);
-            return true; // Cliente entró y tomó un producto
+            return true; // Cliente consiguio entrar y coger un producto
         } else {
             // Si no hay productos, el cliente se marcha
             System.out.println("Cliente " + cliente.getId() + " ha entrado pero no quedan productos.");
-            return false; // Cliente entró pero no pudo tomar un producto
+            return false; // Cliente entró pero no pudo coger un producto
         }
     }
 }
 
-// Clase principal que ejecuta la simulación
-public class Simulacion {
+// Clase principal
+public class Ejercicio1 {
     public static void main(String[] args) {
         final int TOTAL_CLIENTES = 300; // Total de clientes
         final int PRODUCTOS = 100; // Total de productos disponibles
@@ -63,7 +61,7 @@ public class Simulacion {
 
         // Crear clientes
         for (int i = 0; i < TOTAL_CLIENTES; i++) {
-            clientes[i] = new Cliente(i + 1); // Cada cliente recibe un ID único
+            clientes[i] = new Cliente(i + 1);
         }
 
         // Simular los intentos de cada cliente
@@ -78,3 +76,4 @@ public class Simulacion {
         }
     }
 }
+
