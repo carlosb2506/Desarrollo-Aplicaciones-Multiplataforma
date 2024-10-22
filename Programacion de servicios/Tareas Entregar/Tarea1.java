@@ -1,4 +1,5 @@
-public class HiloEjemplo {
+
+public class Tarea1 {
 
     public static void main(String[] args) {
         // Crear e iniciar los hilos
